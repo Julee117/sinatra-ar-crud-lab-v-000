@@ -40,10 +40,10 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  post '/posts/:id/delete' do
-    @post = Post.find(params[:id])
-    erb :show
-  end
+  # post '/posts/:id/delete' do
+  #   @post = Post.find(params[:id])
+  #   erb :show
+  # end
 
   post '/posts/:id/delete' do
     @post = Post.find(params[:id])
